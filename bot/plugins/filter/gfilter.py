@@ -67,10 +67,10 @@ async def get_invite_link(bot, chat_id):
    return None
 
 
-@Client.on_message((filters.private | filters.group) & filter_text) 
+@Client.on_message(filters.command("channel"))
 async def search_channels(bot: Client, message: Message):
    try:
-       search_text = message.text.lower().strip()
+       search_text = message.text.split(maxsplit=1)[-1].lower().strip()
        if len(search_text) < 3:
            return
 
