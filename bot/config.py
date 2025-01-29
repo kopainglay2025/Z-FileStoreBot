@@ -36,7 +36,7 @@ class Config(BaseSettings):
     """A general configuration setup to read either .env or environment keys."""
 
     # Bot deploy config
-    PORT: int = 8080
+    PORT: int = 8088
     HOSTNAME: str = "0.0.0.0"  # noqa: S104
     HTTP_SERVER: bool = True
 
