@@ -53,6 +53,8 @@ class Config(BaseSettings):
     # Bot main config
     WEBSITE_URL_MODE: bool = False
     WEBSITE_URL: str = "https://lx.haxanime.workers.dev"
+    LOG_CHANNEL: int
+    USERNAME: str = "ZeroHaxJI"
     
     RATE_LIMITER: bool = True
     BACKUP_CHANNEL: int
